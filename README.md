@@ -1,6 +1,12 @@
-# NextJS boilerplate
+# 🍷 Wine frontend challenge
 
-Boilerplate created during React Advanced course.
+Projeto do [desafio de frontend](https://github.com/winecombr/frontend-challenge) da Wine. 
+
+O projeto consiste em implementar um e-commerce para venda de vinhos contendo as seguintes funcionalidades:
+- Catálogo de produtos com paginação;
+- Filtragem de produtos por preço;
+- Busca por nome do produto;
+- Adicionar e remover produtos do carrinho;
 
 ## Applied technologies
 - [TypeScript](https://www.typescriptlang.org/);
