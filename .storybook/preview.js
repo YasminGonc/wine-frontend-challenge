@@ -10,6 +10,15 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: 'wine-light',
+    values: [
+      {
+        name: 'wine-light',
+        value: '#F5F5F5'
+      }
+    ]
+  }
 }
 
 export const decorators = [

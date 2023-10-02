@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-      font-family: ${theme.font.family};
+      font-family: ${theme.font.families.lato};
       font-size: ${theme.font.sizes.medium};
     }
   `}
