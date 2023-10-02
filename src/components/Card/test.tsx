@@ -26,4 +26,16 @@ describe('<Card />', () => {
 
     expect(screen.getByText('Não sócio R$ 37,40')).toBeInTheDocument()
   })
+
+  it('should render the card with promotional price', () => {
+    renderWithTheme(<Card {...props} discountPercentage="60" />)
+
+    expect(screen.getByText('R$ 37,40')).toHaveStyleRule({
+      textDecoration: 'line-through'
+    })
+
+    expect(screen.getByText('60% OFF')).toHaveStyleRule({
+      'background-color': '#F79552'
+    })
+  })
 })
