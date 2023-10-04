@@ -24,7 +24,12 @@ export function Card({
       <S.InfoWrapper>
         <S.ImageWrapper>
           <img src={wineImage} alt={title} />
-          {discountPercentage && <S.PromoTagImage src="/img/promoTag.png" />}
+          {discountPercentage && (
+            <S.PromoTagImage
+              src="/img/promoTag.png"
+              alt="Black wine promotion tag"
+            />
+          )}
         </S.ImageWrapper>
 
         <S.Title>{title}</S.Title>
@@ -37,7 +42,7 @@ export function Card({
         )}
 
         <S.WineMemberWrapper>
-          <p>Sócio Wine</p>
+          <S.WineMemberText>Sócio Wine</S.WineMemberText>
           <S.WineMemberPrice>
             <span>R$ </span>
             {memberPriceInteger}

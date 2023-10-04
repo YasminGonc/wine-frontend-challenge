@@ -37,5 +37,7 @@ describe('<Card />', () => {
     expect(screen.getByText('60% OFF')).toHaveStyleRule({
       'background-color': '#F79552'
     })
+
+    // render tag img
   })
 })
