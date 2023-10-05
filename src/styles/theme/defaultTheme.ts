@@ -25,6 +25,7 @@ export const defaultTheme = {
     normal: 400,
     bold: 700,
     sizes: {
+      xxsmall: '1rem',
       xsmall: '1.2rem',
       small: '1.4rem',
       medium: '1.6rem',
@@ -33,6 +34,9 @@ export const defaultTheme = {
       xxlarge: '2.8rem',
       huge: '5.2rem'
     }
+  },
+  grid: {
+    container: '16rem'
   },
   spacings: {
     extraSmall: '0.5rem',
