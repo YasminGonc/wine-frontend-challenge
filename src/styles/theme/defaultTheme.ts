@@ -10,6 +10,7 @@ export const defaultTheme = {
     gray300: '#888888',
     gray400: '#1D1D1B',
     white: '#FFFFFF',
+    border: '#e4e4e4',
     pink100: '#D14B8F', // hover e menu
     pink200: '#B6116E',
     orange: '#F79552',
