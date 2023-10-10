@@ -10,6 +10,7 @@ export const defaultTheme = {
     gray300: '#888888',
     gray400: '#1D1D1B',
     white: '#FFFFFF',
+    border: '#e4e4e4',
     pink100: '#D14B8F', // hover e menu
     pink200: '#B6116E',
     orange: '#F79552',
@@ -25,6 +26,7 @@ export const defaultTheme = {
     normal: 400,
     bold: 700,
     sizes: {
+      xxsmall: '1rem',
       xsmall: '1.2rem',
       small: '1.4rem',
       medium: '1.6rem',
@@ -33,6 +35,9 @@ export const defaultTheme = {
       xxlarge: '2.8rem',
       huge: '5.2rem'
     }
+  },
+  grid: {
+    container: '16rem'
   },
   spacings: {
     extraSmall: '0.5rem',
