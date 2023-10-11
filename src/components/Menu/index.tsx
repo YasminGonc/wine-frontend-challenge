@@ -22,7 +22,7 @@ export function Menu() {
   return (
     <S.Wrapper>
       <S.MenuWrapper>
-        <List size={20} aria-label="Menu" onClick={handleOpenCloseMenu} />
+        <List size={20} aria-label="Open menu" onClick={handleOpenCloseMenu} />
         <img src="/img/wine-logo.png" alt="Wine logo" />
 
         <S.MenuNav>

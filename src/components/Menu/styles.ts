@@ -34,7 +34,7 @@ export const MenuWrapper = styled.div`
   `}
 `
 
-export const MenuNav = styled.nav`
+export const MenuNav = styled.div`
   ${({ theme }) => css`
     display: none;
 
