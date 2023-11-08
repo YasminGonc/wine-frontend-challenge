@@ -11,6 +11,10 @@ export const Wrapper = styled.menu`
     position: relative;
 
     background-color: ${theme.colors.white};
+
+    ${media.greaterThan('large')`
+      padding: ${theme.spacings.xxxsmall} 15rem;
+    `}
   `}
 `
 export const MenuWrapper = styled.div`
