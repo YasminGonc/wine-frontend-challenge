@@ -1,15 +1,33 @@
 import * as S from './styles'
-import * as RadioGroup from '@radix-ui/react-radio-group'
 
-export function ExploreSidebar() {
+export type ExploreSidebarProps = {
+  filterName: string
+  items: string[]
+  onCheck?: (value: string) => void
+}
+
+export function ExploreSidebar({
+  filterName,
+  items,
+  onCheck
+}: ExploreSidebarProps) {
+  const handleValueChange = (value: string) => {
+    !!onCheck && onCheck(value)
+  }
+
   return (
-    <RadioGroup.Root>
-      <S.ItemWrapper>
-        <S.RadioGroupItem value="default" id="default">
-          <S.RadioGroupIndicator />
-        </S.RadioGroupItem>
-        <label htmlFor="default">Default</label>
-      </S.ItemWrapper>
-    </RadioGroup.Root>
+    <S.Wrapper>
+      <h3>{filterName}</h3>
+      <S.RadioGroupRoot onValueChange={(value) => handleValueChange(value)}>
+        {items.map((item) => (
+          <S.ItemWrapper key={item}>
+            <S.RadioGroupItem value={item} id={item}>
+              <S.RadioGroupIndicator />
+            </S.RadioGroupItem>
+            <label htmlFor={item}>{item}</label>
+          </S.ItemWrapper>
+        ))}
+      </S.RadioGroupRoot>
+    </S.Wrapper>
   )
 }

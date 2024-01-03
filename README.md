@@ -43,3 +43,7 @@ You can start editing the page by modifying `pages/index.tsx` The page auto-upda
 ## Additional infos
 
 - Author: [Yasmin](https://www.linkedin.com/in/yasmin-goncalves/)
+
+## Points to check
+
+- style tests
